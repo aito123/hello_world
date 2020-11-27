@@ -1,10 +1,11 @@
-#Create function subcolnames--------------------------
-
-#bla bla bla
-
+#                                   Create function subcolnames
 
 #Sobre cómo sacar el sub-colnames (da para una función)
 
+#Versión final
+attr(enaho17.2, "variable.labels")[which(rownames(labels) == "CODPERSO")]
+
+#Versión anterior
 labels <- data.frame(attr(enaho17.2, "variable.labels"))
 number <- which(rownames(labels) == "T211")
 rownames(labels)[number]; labels[number, ]
@@ -18,8 +19,8 @@ subcolnames() <- function(enaho17.2, T211){
   attr(enaho17.2, "variable.labels")[which(rownames(labels) == "T211")]
 }
 
-attr(enaho17.2, "variable.labels")[which(rownames(labels) == "CODPERSO")]
 
+#Cosas que estaba probando
 
 subcolnames()
 
@@ -36,6 +37,6 @@ View(labels)
 names(enaho17.2[, 2])
 
 
+#                             Create function change or edit subcolnames
 
 
-#Create function change or edit subcolnames------------
