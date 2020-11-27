@@ -1,5 +1,8 @@
 #Create function subcolnames--------------------------
 
+#bla bla bla
+
+
 #Sobre cómo sacar el sub-colnames (da para una función)
 
 labels <- data.frame(attr(enaho17.2, "variable.labels"))
