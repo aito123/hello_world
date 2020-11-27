@@ -19,8 +19,25 @@ subcolnames() <- function(enaho17.2, T211){
   attr(enaho17.2, "variable.labels")[which(rownames(labels) == "T211")]
 }
 
+help(colnames)
+
+colnames(enaho17.2)[1]
+
+subcolnames <- function(df, vect){
+  vect <- paste0("", df$vect, "")
+  attr(df, "variable.labels")[which(rownames(labels) == vect)]
+}
+
+#hablar con Sulmont
+
+subcolnames(enaho17.2, T211)
+
+attr(enaho17.2, "variable.labels")[which(rownames(labels) == "P207")]
+
 
 #Cosas que estaba probando
+
+View(enaho17.2)
 
 subcolnames()
 
@@ -38,5 +55,6 @@ names(enaho17.2[, 2])
 
 
 #                             Create function change or edit subcolnames
-
-
+attr(enaho17.2, "variable.labels")[which(rownames(labels) == "AÑO")] <- "Año del  mono"
+attr(enaho17.2, "variable.labels")[which(rownames(labels) == "AÑO")]
+View(enaho17.2)
